@@ -6,10 +6,10 @@ import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { ProductoComponent } from './pages/producto/producto.component';
 
 const app_routes: Routes = [
-    {path: '', component: PortafolioComponent},
+    {path: 'home', component: PortafolioComponent},
     {path: 'about', component: AboutComponent},
-    {path: 'item', component: ProductoComponent},
-    {path: '**', pathMatch: 'full', redirectTo: ''}
+    {path: 'producto', component: ProductoComponent},
+    {path: '**', pathMatch: 'full', redirectTo: 'home'}
 
 ];
 
